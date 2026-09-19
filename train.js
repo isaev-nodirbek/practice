@@ -3,6 +3,7 @@
 // Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
 // MASALAN: countVowels("string") return 1;
 
+
 function countVowels(str) {
   let lowStr = str.toLowerCase();
   let count = 0;
