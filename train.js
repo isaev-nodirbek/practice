@@ -1,3 +1,28 @@
+// TASK K:
+
+// Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
+// MASALAN: countVowels("string") return 1;
+
+function countVowels(str) {
+  let lowStr = str.toLowerCase();
+  let count = 0;
+  for (let char of lowStr) {
+    if (
+      char === "a" ||
+      char === "o" ||
+      char === "e" ||
+      char === "i" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const result = countVowels("string");
+console.log(result);
+
 // TASK G:
 
 // Yagona parametrga ega function tuzing.
@@ -8,19 +33,19 @@
 // Yuqoridagi misolda, birinchi indeksda 21 joylashgan.
 // Va bu 21 soni arrayning tarkibidagi birinchi eng katta son hisobladi va bizga uning indeksi 1 qaytadi.
 
-function getHighestIndex(arr) {
-  let maxIndex = 0;
+// function getHighestIndex(arr) {
+//   let maxIndex = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > arr[maxIndex]) {
-      maxIndex = i;
-    }
-  }
-  return maxIndex;
-}
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > arr[maxIndex]) {
+//       maxIndex = i;
+//     }
+//   }
+//   return maxIndex;
+// }
 
-const result = getHighestIndex([5, 21, 12, 21, 8]);
-console.log("Result: ", result);
+// const result = getHighestIndex([5, 21, 12, 21, 8]);
+// console.log("Result: ", result);
 
 // TASK F:
 
@@ -30,22 +55,22 @@ console.log("Result: ", result);
 
 // MASALAN: findDoublers("hello"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
 
-function findDoublers(str) {
-  let letters = [];
+// function findDoublers(str) {
+//   let letters = [];
 
-  for (let a = 0; a < str.length; a++) {
-    if (letters.includes(str[a])) {
-      return true;
-    }
+//   for (let a = 0; a < str.length; a++) {
+//     if (letters.includes(str[a])) {
+//       return true;
+//     }
 
-    letters.push(str[a]);
-  }
+//     letters.push(str[a]);
+//   }
 
-  return false;
-}
+//   return false;
+// }
 
-const result = findDoublers("Hello");
-console.log("Result: ", result);
+// const result = findDoublers("Hello");
+// console.log("Result: ", result);
 
 // TASK E:
 

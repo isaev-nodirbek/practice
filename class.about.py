@@ -116,7 +116,7 @@ class Shop ():
             return
         if quantity > self.products[product]:
             print(
-                f"Bizda {product} mahsulotidan dan {quantity} miqdorda  mavjud emas")
+                f"Bizda {product} mahsulotidan dan {quantity} ta   mavjud emas")
             return
         self.products[product] -= quantity
         print(f"Soat {self._time()} da {product} dan {quantity} dona sotildi")
@@ -134,5 +134,5 @@ class Shop ():
 
 shop = Shop(4, 5, 2)
 shop.qoldiq()
-shop.sotish("lagman", 10)
-shop.qabul("cola", 2)
+shop.sotish("bread", 2)
+shop.qabul("cola", 10)
